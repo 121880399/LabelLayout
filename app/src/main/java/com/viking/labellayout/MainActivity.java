@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     };
 
     private LabelLayout mLabelLayout;
-    private boolean isOpen=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,15 +33,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initData()
     {
+        //方法1
 //        LayoutInflater mInflater = LayoutInflater.from(this);
 //        for (int i = 0; i < strArray.length; i++) {
 //            TextView tv = (TextView) mInflater.inflate(R.layout.item_tv,
-//                    mFlowLayout, false);
+//                    mLabelLayout, false);
 //            tv.setText(strArray[i]);
 //            tv.setId(i);
 //            tv.setOnClickListener(this);
-//            mFlowLayout.addView(tv);
+//            mLabelLayout.addView(tv);
 //        }
+        //方法2
         refreshLine(-1);
     }
 
