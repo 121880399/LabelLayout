@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索条件:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        />
+    <com.viking.labellayout.view.LabelLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_tag"
+        >
+
+    </com.viking.labellayout.view.LabelLayout>
+    <TextView
+        android:id="@+id/tv_isOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展开"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onViewClick"
+        />
+</RelativeLayout>
