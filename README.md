@@ -9,7 +9,8 @@
 
 # 如何使用？
 1.如果只是纯粹的展示数据的话
-     先画标签的样子
+     先画标签的样式
+```
      <?xml version="1.0" encoding="utf-8"?>
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
@@ -19,9 +20,10 @@
         android:textColor="#5BC4ED"
         android:text="Helloworld" >
     </TextView>
-    
+```
+   
     然后创建主布局
-    
+```
     <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -55,9 +57,9 @@
         android:onClick="onViewClick"
         />
 </RelativeLayout>
-
+```
       接着在代码里面添加数据
-      
+```      
       LayoutInflater mInflater = LayoutInflater.from(this);
         for (int i = 0; i < strArray.length; i++) {
             TextView tv = (TextView) mInflater.inflate(R.layout.item_tv,
@@ -67,11 +69,12 @@
             tv.setOnClickListener(this);
             mLabelLayout.addView(tv);
         }
-        
+  ```    
        实现Onclick方法就可以完成点击事件
  2.如果除了展示数据,还要实现排他性选择，比如选了一个标签那么这个标签会发生颜色的变化，其他标签恢复正常。就用下面这种方法。
  
  动态的创建TextView
+ ```
   /**
      * 自定义radioButton
      *
@@ -114,6 +117,6 @@
             }
         }
     }
-    
+ ```
     具体的见Demo
         
