@@ -21,8 +21,7 @@
         android:text="Helloworld" >
     </TextView>
 ```
-   
-    然后创建主布局
+然后创建主布局
 ```
     <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
@@ -58,7 +57,7 @@
         />
 </RelativeLayout>
 ```
-      接着在代码里面添加数据
+接着在代码里面添加数据
 ```      
       LayoutInflater mInflater = LayoutInflater.from(this);
         for (int i = 0; i < strArray.length; i++) {
@@ -70,10 +69,11 @@
             mLabelLayout.addView(tv);
         }
   ```    
-       实现Onclick方法就可以完成点击事件
- 2.如果除了展示数据,还要实现排他性选择，比如选了一个标签那么这个标签会发生颜色的变化，其他标签恢复正常。就用下面这种方法。
+ 实现Onclick方法就可以完成点击事件
  
+ 2.如果除了展示数据,还要实现排他性选择，比如选了一个标签那么这个标签会发生颜色的变化，其他标签恢复正常。就用下面这种方法。
  动态的创建TextView
+  
  ```
   /**
      * 自定义radioButton
@@ -118,5 +118,5 @@
         }
     }
  ```
-    具体的见Demo
+ 具体的见Demo
         
